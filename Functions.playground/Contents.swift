@@ -16,8 +16,28 @@ func add(_ a: Int, _ b: Int) -> Int {
 
 add(2, 322)
 
-func getFullName (firstName:String = "DefaultValue", lastName:String)->String {
+func getFullName(firstName: String = "DefaultValue", lastName: String) -> String {
     return firstName + lastName
 }
 
-getFullName(firstName: "Olay",lastName: "Podles")
+getFullName(firstName: "Olay", lastName: "Podles")
+
+// FizzBuzz
+func fizzBuzz() {
+    for item in 0 ... 1000 {
+        if item % 3 == 0, item % 5 == 0 {
+            print("FizzBuzz")
+        }
+        else if item % 3 == 0 {
+            print("Fizz")
+        }
+        else if item % 5 == 0 {
+            print("Buzz")
+        }
+        else {
+            print(item)
+        }
+    }
+}
+
+fizzBuzz()
